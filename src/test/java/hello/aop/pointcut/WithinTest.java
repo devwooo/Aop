@@ -35,7 +35,7 @@ public class WithinTest {
     }
 
     @Test
-    void withinStart() {
+    void withinStar() {
         pointcut.setExpression("within(hello.aop.member.*Service*)");
         Assertions.assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isTrue();
     }
